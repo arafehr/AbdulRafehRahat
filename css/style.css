@@ -1,0 +1,166 @@
+/* Custom styles for theme */
+
+/* ================================= */
+/* ---------- GENERRAL CSS --------- */
+/* ================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+ol,ul {
+	margin: 0;
+	padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+	color: inherit;
+	transition: ease all 0.5s;
+}
+/* SPACING */
+
+/* HEADING */
+.default-heading{
+	margin-bottom: 45px;
+}
+.default-heading h3{
+	font-size: 24px;
+	font-weight: 32px;
+	font-weight: 500;
+}
+.default-heading p{
+	font-size: 14px;
+	font-weight:400;
+	line-height: 24px;
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+/* ================================= */
+/* ----------- BANNER CSS ---------- */
+/* ================================= */
+.navbar-white {
+	background-color: rgba(234,236,239,.81);
+	transition: background-color .2s;
+}
+/* ================================= */
+/* ----------- BANNER CSS ---------- */
+/* ================================= */
+.banner .canvas{
+	position: absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	z-index:1;
+}
+.banner .banner-detail {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.banner .banner-detail h1{
+	font-weight: 300;
+  	line-height: 1.2;
+	color:#fff;
+}
+.banner .banner-detail p{
+	font-weight: 300;
+	color:#fff;
+}
+.social-icons a{
+	display: inline-block;
+	color:#fff;
+	margin: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	transition: all .8s;
+}
+.social-icons a:hover {
+	color: #000;
+}
+.banner{
+	background: -o-linear-gradient(135deg, #4484ce, #1ad7c0, #9b59b6, #ecf0f1);
+	background: linear-gradient(-45deg, #4484ce, #1ad7c0, #9b59b6, #ecf0f1);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 70s ease infinite;
+	animation: gradient 70s ease infinite;
+	height: 100vh;
+	position: relative;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.progress{
+	height: 26px;
+}
+.progress-bar {
+	width: 0;
+	-webkit-animation: progress 1.5s ease-in-out forwards;
+	animation: progress 1.5s ease-in-out forwards;
+	background: -o-linear-gradient(135deg, #7702a5, #9b59b6);
+	background: linear-gradient(-45deg, #7702a5, #9b59b6);
+	font-weight:600;
+	font-size:18px;
+}
+  .progress-bar .title {
+	opacity: 0;
+	-webkit-animation: show 0.35s forwards ease-in-out 0.5s;
+	animation: show 0.35s forwards ease-in-out 0.5s;
+  }
+  
+  @-webkit-keyframes progress {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 100%;
+	}
+  }
+  
+  @keyframes progress {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 100%;
+	}
+  }
+  @-webkit-keyframes show {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+  @keyframes show {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+
+/* RESPONSIVE */
+@media(max-width:1400px) {
+	.footer-middle .footer-crumbs li + li {
+		margin-left: 35px;
+	}
+}
